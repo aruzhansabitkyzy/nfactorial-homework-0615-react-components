@@ -5,7 +5,7 @@ import { ReactComponent as FacebookLogoSVG } from "../../assets/facebook.svg";
 import { ReactComponent as InstagramLogoSVG } from "../../assets/instagram.svg";
 import { ReactComponent as TwitterLogoSVG } from "../../assets/twitter.svg";
 import { ReactComponent as YoutubeLogoSVG } from "../../assets/youtube.svg";
-
+import {SearchBar} from '../sw-item-searchbar/index';
 //массив данных ссылок
 const swLinks = [
   {
@@ -50,7 +50,8 @@ export const Header = ({ fan }) => {
       <StarWarsLogoSVG />
       <div className="search-layout">
         <IconSearchSVG className="search-icon" />
-        <input placeholder="Search Star Wars" type="text" />
+        {/* <input placeholder="Search Star Wars" type="text" /> */}
+            <SearchBar />
         <div style={{ color: "white", paddingTop: "1rem" }}>
           I am fan of: {fan}
         </div>
